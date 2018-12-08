@@ -1,0 +1,18 @@
+public class Planets {
+
+    private String planetName;
+    private double planetMass;
+    private double planetDistance;
+
+    public Planets(String name, double mass, double distance){
+        planetName = name;
+        planetMass = mass;
+        planetDistance = distance;
+    }
+
+    @Override
+    public String toString() {//Converting the value from HEX to a readable String.
+        return planetName + planetMass + planetDistance;
+    }
+
+}

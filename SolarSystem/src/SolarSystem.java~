@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class SolarSystem {
+
+    private String systemName;
+    private double starBrightness;
+    private ArrayList<Planets> planets = new ArrayList<>();
+
+    public SolarSystem(String name, double luminosity){
+        systemName = name;
+        starBrightness = luminosity;
+    }
+
+    public void addPlanet(String name, double mass, double distance){
+        planets.add(new Planets(name, mass, distance));
+    }
+
+    @Override
+    public String toString() {//Converting the value from HEX to a readable String.
+        return systemName;
+    }
+}
